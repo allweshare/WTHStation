@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="PTBStation" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/PTBStation" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/PTBStation" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-m32" />
+			<Add option="`pkg-config --cflags gtk+-3.0`" />
+			<Add option="-fexec-charset=UTF-8" />
+			<Add option="-finput-charset=UTF-8" />
+		</Compiler>
+		<Linker>
+			<Add option="-m32" />
+			<Add option="`pkg-config --libs gtk+-3.0`" />
+			<Add library="sqlite3" />
+			<Add directory="E:/C_Proj/sqlite3/bin/Release_x86" />
+		</Linker>
+		<Unit filename="BLEService.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BLEService.h" />
+		<Unit filename="ComService.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ComService.h" />
+		<Unit filename="ComSetDialog.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ComSetDialog.h" />
+		<Unit filename="Configuration.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Configuration.h" />
+		<Unit filename="CustomDraw.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="CustomDraw.h" />
+		<Unit filename="DataBase.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="DataBase.h" />
+		<Unit filename="DataListDialog.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="DataListDialog.h" />
+		<Unit filename="MainFrame.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="MainFrame.h" />
+		<Unit filename="OptionPane.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="OptionPane.h" />
+		<Unit filename="PTBStation.cbp" />
+		<Unit filename="RealTimePane.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="RealTimePane.h" />
+		<Unit filename="StatSetDialog.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="StatSetDialog.h" />
+		<Unit filename="StatusPane.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="StatusPane.h" />
+		<Unit filename="TitleBar.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="TitleBar.h" />
+		<Unit filename="main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="main.h" />
+		<Unit filename="protocol.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="protocol.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
